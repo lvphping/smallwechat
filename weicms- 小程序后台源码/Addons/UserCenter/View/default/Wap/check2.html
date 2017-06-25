@@ -1,0 +1,36 @@
+<include file="Public/mobile_head"/>
+<link href="{:ADDON_PUBLIC_PATH}/userCenter.css?v={:SITE_VERSION}" rel="stylesheet" type="text/css">
+<block name="body">
+<style type="text/css">
+body{ background:#fff}
+</style>
+<section class="check_done">
+        	<img src="__IMG__/check_right.png"/>
+        	<p>恭喜您!检测完成</p>
+            <p id="errormsg1"></p>
+            <p id="errormsg2"></p>
+            <p id="errormsg3"></p>
+            <p id="errormsg4"></p>
+            <a class="btn" href="JavaScript:;" onClick="wx.closeWindow();">返回微信</a>
+</section>
+<script type="text/javascript">
+var WX_APPID = "{$jsapiParams.appId}";
+var	WXJS_TIMESTAMP='{$jsapiParams.timestamp}'; 
+var NONCESTR= '{$jsapiParams.nonceStr}'; 
+var SIGNATURE= '{$jsapiParams.signature}';
+wx.config({
+	debug: false,
+	appId: WX_APPID, // 必填，公众号的唯一标识
+	timestamp: WXJS_TIMESTAMP, // 必填，生成签名的时间戳
+	nonceStr: NONCESTR, // 必填，生成签名的随机串
+	signature: SIGNATURE,// 必填，签名，见附录1
+	jsApiList: ['chooseImage']
+	});
+wx.error(function(res){
+	$.post("{:addons_url('UserCenter://Wap/check3',array('token'=>I('token')))}",{msg:res.errMsg});
+});
+</script>
+</block>
+<include file="Public/mobile_foot"/>
+</body>
+</html>

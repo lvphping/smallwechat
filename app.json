@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/lists/lists",
+    "pages/detail/detail",
+    "pages/aboutme/aboutme",
+    "pages/form/form",
+    "pages/logs/logs",
+    "pages/member/member",
+    "pages/map/map"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "LvApp",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#81C6DF",
+    "borderStyle": "#8a8a8a",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"images/1-2.png",
+      "selectedIconPath":"images/1.png"
+    }, 
+     {
+      "pagePath": "pages/lists/lists",
+      "text": "精彩美文",
+      "iconPath":"images/2-2.png",
+      "selectedIconPath":"images/2.png"
+    },
+    {
+      "pagePath": "pages/form/form",      
+      "text": "在线留言",
+      "iconPath":"images/3-3.png",
+      "selectedIconPath":"images/3.png"
+    },
+    {
+      "pagePath": "pages/map/map",      
+      "text": "地图展示",
+      "iconPath":"images/6-6.png",
+      "selectedIconPath":"images/6.png"
+    },{
+      "pagePath": "pages/member/member",      
+      "text": "会员中心",
+      "iconPath":"images/5-5.png",
+      "selectedIconPath":"images/5.png"
+    }     
+    ]
+  }  
+}

@@ -1,0 +1,13 @@
+<!--aboutme.wxml-->
+<view class="warp">
+
+  <view class="title">{{info.title}}</view>
+  <view class="info">
+    <view class="cTime">{{info.cTime}}</view>
+    <view class="cTime">浏览次数:{{info.times}}</view>
+  </view>
+  <view class="img"><image src="{{info.img}}" class="in-img" background-size="cover" model="scaleToFill"></image></view>
+  <view class="content">{{info.content}}</view>
+  <view class="close" bindtap="closepage"> 返回 </view>
+  <toast hidden="{{toastHidden}}" bindchange="toastChange" duration="3000">{{msg}}</toast>
+</view>

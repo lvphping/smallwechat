@@ -1,0 +1,30 @@
+<!--aboutme.wxml-->
+<view class="about">
+<view class="about-wei">
+  <view class="about-img"><image src="{{img}}" class="in-img" background-size="cover" model="scaleToFill"></image></view>
+  <view class="about-title"></view>
+</view>
+  <view class="about-content">{{intro}}</view>
+
+  <view class="about-addr">
+  <view class="about-tab">{{contab}}</view>
+  <view>地址: {{address}}</view>
+  <view bindtap='callme'>联系电话：{{mobile}}</view>
+  <view>商务合作：{{email}}</view>
+  <view>应用案例:</view>
+  <view class="demo">
+    <view><image src="../../images/logo.png"></image></view>
+    <view><image src="../../images/logo.png"></image></view>
+    <view><image src="../../images/logo.png"></image></view>
+    <view><image src="../../images/logo.png"></image></view>
+    <view><image src="../../images/logo.png"></image></view>
+    <view><image src="../../images/logo.png"></image></view>
+    <view><image src="../../images/logo.png"></image></view>
+    <view><image src="../../images/logo.png"></image></view>
+    <view><image src="../../images/logo.png"></image></view>
+    <view><image src="../../images/logo.png"></image></view>
+    <view><image src="../../images/logo.png"></image></view>
+    <view><image src="../../images/logo.png"></image></view>
+  </view>
+  </view>
+</view>

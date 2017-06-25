@@ -1,0 +1,16 @@
+.about-wei {text-align: center;}
+.about-title {display: inline-block;margin: 20px 0;}
+.about-content { text-indent: 2em;font-size: 16px; margin: 0 24px; line-height: 1.5;}
+.about-addr {font-size: 15px; line-height: 2;text-indent: 2em;}
+.about-tab {margin-top: 10px;font-weight:bold;font-size:18px}
+.in-img {width: 150rpx;height: 150rpx;margin: 50px auto 0;}
+.demo{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.demo image{
+    width:100rpx;
+    height:100rpx;
+}

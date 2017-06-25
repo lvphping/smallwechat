@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{:SITE_URL}/Public/Home/css/mobile_module.css?v={:SITE_VERSION}" media="all">
+    <script type="text/javascript" src="__STATIC__/jquery-2.0.3.min.js"></script>
+   <script type="text/javascript" src="{:SITE_URL}/minify.php?f=__JS__/prefixfree.min.js,__JS__/m/dialog.js,__JS__/m/flipsnap.min.js,__JS__/m/mobile_module.js&v={:SITE_VERSION}"></script>
+   <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<title><php>echo empty($page_title) ? C('WEB_SITE_TITLE') : $page_title;</php></title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <script type="text/javascript">
+		var SITE_URL = "{:SITE_URL}";
+		var  IMG_PATH = "{:SITE_URL}/Public/Home/images";
+		var  STATIC_PATH = "{:SITE_URL}/static";
+    	wx.config({
+			debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+			appId: "{$jsapiParams.appId}", // 必填，公众号的唯一标识
+			timestamp: '{$jsapiParams.timestamp}', // 必填，生成签名的时间戳
+			nonceStr: '{$jsapiParams.nonceStr}', // 必填，生成签名的随机串
+			signature: '{$jsapiParams.signature}',// 必填，签名，见附录1
+			jsApiList: [
+				'onMenuShareTimeline',
+				'onMenuShareAppMessage',
+				'onMenuShareQQ',
+				'onMenuShareWeibo',
+				'openLocation',
+				'hideOptionMenu',
+				'closeWindow'
+			] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+		});
+    </script>
+</head>

@@ -1,0 +1,48 @@
+<form bindsubmit="formSubmit">
+  <include src="username.wxml"/>
+   
+ <view class="section section_gap">
+  <view class="section__title">归属地:</view>
+  <picker value="{{area}}" range="{{array}}" bindchange="bindPickerChange">
+    <view class="picker">
+      当前选择：{{array[area]}}
+    </view>
+  </picker>
+</view> 
+
+<view class="section section_gap">
+    <view class="section__title">专业技能:</view>
+    <checkbox-group name="product">
+      <label><checkbox value="0"/>PHP</label>
+      <label><checkbox value="1"/>JAVA</label>
+      <label><checkbox value="2"/>C#</label>
+      <label><checkbox value="3"/>C++</label>
+      <label><checkbox value="4"/>IOS</label>
+      <label><checkbox value="5"/>Android</label>
+      <label><checkbox value="6"/>Python</label>
+      <label><checkbox value="7"/>.net</label>
+      <label><checkbox value="8"/>易语言</label>
+    </checkbox-group>
+  </view>  
+
+<view class="section section_gap">
+  <text class="section__title">留言内容:</text>
+  <view class="body-view">
+      <textarea value="{{content}}" name="content" placeholder="请输入留言内容"/> 
+  </view>
+</view>
+
+<view class="section section_gap">
+  <text class="section__title">请给我们打分:</text>
+  <view class="body-view">
+    <slider max="100" min="0" show-value bindchange="bindSliderChange" value="{{score}}" />
+  </view>
+</view>
+
+  <view class="btn-area section_gap">
+    <button formType="submit" type="primary">提交反馈</button>
+  </view>
+</form>
+<!-- 提示框 -->
+<loading hidden="{{loadHidden}}" bindchange="loadChange">{{loadmsg}}</loading>
+<toast hidden="{{toastHidden}}" bindchange="toastChange" duration="1500">{{msg}}</toast>

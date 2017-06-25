@@ -1,0 +1,37 @@
+view{
+    font-size: 14px;
+}
+wx-button {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+wx-label {
+  display: block;
+  margin-top: 10rpx;
+}
+.picker-text {
+  margin-left: 20rpx;
+  position: relative;
+  font-size: 14px;
+}
+.section{
+    margin-bottom: 80rpx;
+}
+.section_gap{
+    padding: 0 30rpx;
+}
+.section__title{
+    margin-bottom: 16rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    font-weight:bold;
+    
+}
+.section_gap .section__title{
+    padding-left: 0;
+    padding-right: 0;
+}
+textarea{
+    border-radius:10px;
+    margin:10px;
+}

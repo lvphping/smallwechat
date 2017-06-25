@@ -1,0 +1,435 @@
+[ 2017-03-28T10:41:58+08:00 ] 192.168.1.101 /weicms/index.php?s=/addon/Cms/Cms/getList&lastid=0&limit=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.037002s ]
+INFO: [ app_init ] --END-- [ RunTime:0.088005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `wp_config` WHERE ( name="FOLLOW_YOUKE_UID" ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: UPDATE `wp_config` SET `value`='-119' WHERE ( name="FOLLOW_YOUKE_UID" ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: uid F:\phpStudy\WWW\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0110s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-119' and g.status='1' )  [ RunTime:0.0040s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0180s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 0  [ RunTime:0.0040s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+NOTIC: [8] Undefined index: query F:\phpStudy\WWW\weicms\ThinkPHP\Common\functions.php 第 1002 行.
+NOTIC: [8] Undefined variable: map F:\phpStudy\WWW\weicms\Addons\Cms\Controller\CmsController.class.php 第 17 行.
+SQL: SELECT `id`,`title`,`img`,`cTime` FROM `wp_cms` ORDER BY id desc LIMIT 5   [ RunTime:0.0350s ]
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 111 LIMIT 1   [ RunTime:0.0140s ]
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 108 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 107 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 106 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 109 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+
+[ 2017-03-28T10:42:29+08:00 ] 192.168.1.101 /weicms/index.php?s=/addon/Cms/Cms/getList&lastid=6&limit=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `wp_config` WHERE ( name="FOLLOW_YOUKE_UID" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `wp_config` SET `value`='-120' WHERE ( name="FOLLOW_YOUKE_UID" ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: uid F:\phpStudy\WWW\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0090s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-120' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 0  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+NOTIC: [8] Undefined index: query F:\phpStudy\WWW\weicms\ThinkPHP\Common\functions.php 第 1002 行.
+SQL: SELECT `id`,`title`,`img`,`cTime` FROM `wp_cms` WHERE `id` < 6 ORDER BY id desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 105 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 110 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 103 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 101 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 102 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+
+[ 2017-03-28T10:42:44+08:00 ] 192.168.1.101 /weicms/index.php?s=/addon/Cms/Cms/testLogin&PHPSESSID=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `wp_config` WHERE ( name="FOLLOW_YOUKE_UID" ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `wp_config` SET `value`='-122' WHERE ( name="FOLLOW_YOUKE_UID" ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: uid F:\phpStudy\WWW\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0090s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-122' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 0  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+NOTIC: [8] Undefined index: query F:\phpStudy\WWW\weicms\ThinkPHP\Common\functions.php 第 1002 行.
+
+[ 2017-03-28T10:42:52+08:00 ] 192.168.1.101 /weicms/index.php?s=/addon/Cms/Cms/sendCode&code=the%20code%20is%20a%20mock%20one&PHPSESSID=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `wp_config` WHERE ( name="FOLLOW_YOUKE_UID" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wp_config` SET `value`='-121' WHERE ( name="FOLLOW_YOUKE_UID" ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: uid F:\phpStudy\WWW\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0080s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-121' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 0  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+NOTIC: [8] Undefined index: query F:\phpStudy\WWW\weicms\ThinkPHP\Common\functions.php 第 1002 行.
+NOTIC: [2] Missing argument 2 for post_data(), called in F:\phpStudy\WWW\weicms\Addons\Cms\Controller\CmsController.class.php on line 44 and defined F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 2798 行.
+NOTIC: [8] Undefined variable: param F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 2800 行.
+NOTIC: [8] Undefined variable: param F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 2824 行.
+
+[ 2017-03-28T10:42:52+08:00 ] 192.168.1.101 /weicms/index.php?s=/addon/Cms/Cms/saveUserInfo&encryptedData=undefined&PHPSESSID=&iv=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `wp_config` WHERE ( name="FOLLOW_YOUKE_UID" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wp_config` SET `value`='-123' WHERE ( name="FOLLOW_YOUKE_UID" ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: uid F:\phpStudy\WWW\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0100s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-123' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 0  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+NOTIC: [8] Undefined index: query F:\phpStudy\WWW\weicms\ThinkPHP\Common\functions.php 第 1002 行.
+
+[ 2017-03-28T10:43:09+08:00 ] 192.168.1.101 /weicms/index.php?s=/addon/Cms/Cms/getList&lastid=0&limit=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `wp_config` WHERE ( name="FOLLOW_YOUKE_UID" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wp_config` SET `value`='-124' WHERE ( name="FOLLOW_YOUKE_UID" ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: uid F:\phpStudy\WWW\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0070s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-124' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 0  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+NOTIC: [8] Undefined index: query F:\phpStudy\WWW\weicms\ThinkPHP\Common\functions.php 第 1002 行.
+NOTIC: [8] Undefined variable: map F:\phpStudy\WWW\weicms\Addons\Cms\Controller\CmsController.class.php 第 17 行.
+SQL: SELECT `id`,`title`,`img`,`cTime` FROM `wp_cms` ORDER BY id desc LIMIT 5   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+
+[ 2017-03-28T13:15:53+08:00 ] 192.168.1.101 /weicms/index.php?s=/addon/Cms/Cms/getList&lastid=0&limit=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `value` FROM `wp_config` WHERE ( name="FOLLOW_YOUKE_UID" ) LIMIT 1   [ RunTime:0.0650s ]
+SQL: UPDATE `wp_config` SET `value`='-125' WHERE ( name="FOLLOW_YOUKE_UID" ) [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: uid F:\phpStudy\WWW\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0150s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-125' and g.status='1' )  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 0  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+NOTIC: [8] Undefined index: query F:\phpStudy\WWW\weicms\ThinkPHP\Common\functions.php 第 1002 行.
+NOTIC: [8] Undefined variable: map F:\phpStudy\WWW\weicms\Addons\Cms\Controller\CmsController.class.php 第 17 行.
+SQL: SELECT `id`,`title`,`img`,`cTime` FROM `wp_cms` ORDER BY id desc LIMIT 5   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+
+[ 2017-03-28T13:21:40+08:00 ] 192.168.1.101 /weicms/index.php?s=/addon/Cms/Cms/getList&lastid=0&limit=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `value` FROM `wp_config` WHERE ( name="FOLLOW_YOUKE_UID" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `wp_config` SET `value`='-126' WHERE ( name="FOLLOW_YOUKE_UID" ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: uid F:\phpStudy\WWW\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0090s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-126' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 0  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+NOTIC: [8] Undefined index: query F:\phpStudy\WWW\weicms\ThinkPHP\Common\functions.php 第 1002 行.
+NOTIC: [8] Undefined variable: map F:\phpStudy\WWW\weicms\Addons\Cms\Controller\CmsController.class.php 第 17 行.
+SQL: SELECT `id`,`title`,`img`,`cTime` FROM `wp_cms` ORDER BY id desc LIMIT 5   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 1071 行.
+
+[ 2017-03-28T13:23:07+08:00 ] 192.168.1.101 /weicms/index.php?s=/addon/Cms/Cms/testLogin&PHPSESSID=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `wp_config` WHERE ( name="FOLLOW_YOUKE_UID" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wp_config` SET `value`='-127' WHERE ( name="FOLLOW_YOUKE_UID" ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: uid F:\phpStudy\WWW\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0080s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-127' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 0  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+NOTIC: [8] Undefined index: query F:\phpStudy\WWW\weicms\ThinkPHP\Common\functions.php 第 1002 行.
+
+[ 2017-03-28T13:23:24+08:00 ] 192.168.1.101 /weicms/index.php?s=/addon/Cms/Cms/sendCode&code=the%20code%20is%20a%20mock%20one&PHPSESSID=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SELECT `value` FROM `wp_config` WHERE ( name="FOLLOW_YOUKE_UID" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `wp_config` SET `value`='-128' WHERE ( name="FOLLOW_YOUKE_UID" ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: uid F:\phpStudy\WWW\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0070s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-128' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 0  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+NOTIC: [8] Undefined index: query F:\phpStudy\WWW\weicms\ThinkPHP\Common\functions.php 第 1002 行.
+NOTIC: [2] Missing argument 2 for post_data(), called in F:\phpStudy\WWW\weicms\Addons\Cms\Controller\CmsController.class.php on line 44 and defined F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 2798 行.
+NOTIC: [8] Undefined variable: param F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 2800 行.
+NOTIC: [8] Undefined variable: param F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 2824 行.
+
+[ 2017-03-28T13:23:25+08:00 ] 192.168.1.101 /weicms/index.php?s=/addon/Cms/Cms/saveUserInfo&encryptedData=undefined&PHPSESSID=&iv=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `wp_config` WHERE ( name="FOLLOW_YOUKE_UID" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wp_config` SET `value`='-129' WHERE ( name="FOLLOW_YOUKE_UID" ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: uid F:\phpStudy\WWW\weicms\ThinkPHP\Library\Think\Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0060s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-129' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id F:\phpStudy\WWW\weicms\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons F:\phpStudy\WWW\weicms\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 0  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res F:\phpStudy\WWW\weicms\Application\Common\Model\PublicModel.class.php 第 52 行.
+NOTIC: [8] Undefined index: query F:\phpStudy\WWW\weicms\ThinkPHP\Common\functions.php 第 1002 行.
+

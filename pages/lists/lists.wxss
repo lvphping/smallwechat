@@ -1,0 +1,34 @@
+.warp{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx;
+}
+navigator { overflow: hidden;}
+
+.content{
+    margin:20rpx 10rpx 20rpx 10rpx;
+}
+
+.imgs,.infos{
+    float:left;
+}
+.imgs image{
+    width:150rpx;
+    height:130rpx;
+}
+.infos{
+    margin-left:40rpx;
+    width:480rpx;
+    font-size:15px;
+}
+.infos .title{
+    height:90rpx;
+    overflow:hidden;
+}
+.infos .date{
+    color:#aaa;
+    font-size:14px
+}
+
+.loadMore {text-align: center;margin: 30px;color: #aaa;font-size: 16px}

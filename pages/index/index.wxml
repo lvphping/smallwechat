@@ -1,0 +1,64 @@
+<!--lists.wxml-->
+<view class="warp">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+        <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+    </block>
+    </swiper>
+</view>
+<view>
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+    <!-- 导航 -->
+    <view class="second">
+        <view class="sl-col">
+            <view class="circle circle_bg1"><navigator url="../../pages/aboutme/aboutme">小</navigator></view>
+            <view class="circle_text">关于我们</view>
+        </view>
+        <view class="sl-col">
+            <view class="circle circle_bg2">试</view>
+            <view class="circle_text"><navigator url="../../pages/lists/lists">精彩美文</navigator></view>
+        </view>
+        <view class="sl-col">
+             <view class="circle circle_bg3">牛</view>
+             <view class="circle_text"><navigator url="../../pages/form/form">在线留言</navigator></view>
+        </view>
+        <view class="sl-col">
+             <view class="circle circle_bg4">刀</view>
+             <view class="circle_text"><navigator url="../../pages/aboutme/aboutme">我要签到</navigator></view>
+        </view>
+    </view>
+
+    <!-- 产品展示 -->
+    <view class="product">
+       <view class="product_left">
+           <image src="http://www.oumotf.com/Public/1.jpg"></image>
+           <image src="http://www.oumotf.com/Public/3.jpg"></image>
+           <image src="http://www.oumotf.com/Public/4.jpg"></image>
+       </view>
+       <view class="product_right">
+            <image src="http://www.oumotf.com/Public/2.jpg" class="r1"></image>
+            <image src="http://www.oumotf.com/Public/5.jpg" class="r2"></image>
+            <image src="http://www.oumotf.com/Public/6.jpg" class="r3"></image>
+       </view>
+    </view>
+
+    <!-- 今日头条-->
+     <view class="toutiao">
+        <image class="toutiao-img" mode="scaleToFill" src="../../images/tt.png"></image>
+        <view class="toutiao-text">{{info.title}}</view>
+    </view>
+    <!-- 今日头条-->
+    <view class="one-img">
+        <image class="img-poster" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
+    </view>
+    <view class="one-img">
+        <image class="img-poster" src="http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg"></image>
+    </view>
+    <view class="one-img">
+        <image class="img-poster" src="http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"></image>
+    </view>
+</view>
